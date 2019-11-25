@@ -275,7 +275,19 @@ label {
 .area-title.white-text p{color: #fff}
 .area-title p{margin: 0}
 
-
+.google-maps {
+	position: relative;
+	padding-bottom: 75%; // This is the aspect ratio
+	height: 0;
+	overflow: hidden;
+}
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
 /* 2. header */
 .header-transparent {
 	position: absolute;
@@ -354,6 +366,9 @@ label {
 }
 .slider-height {
 	min-height: 950px;
+}
+.slider-width {
+	min-width: 25%;
 }
 .silder-content {
 	position: relative;
@@ -1417,7 +1432,7 @@ span.month {
 }
 .footer-text h4 {
 	color: #fff;
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 }
 .copyright {
 	border-top: 1px solid #83c7fe;
@@ -1440,7 +1455,7 @@ span.month {
 	display: block;
 	position: static;
 	margin-right: 0px;
-	margin-bottom: 40px;
+	margin-bottom: 20px;
 }
 .footer-subscribe{}
 
